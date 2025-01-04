@@ -1,0 +1,62 @@
+
+MySQL Tables
+
+
+Table - DONOR_DETAILS 
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| DonorID     | varchar(24) | NO   | PRI | NULL    |       |
+| name        | varchar(26) | YES  |     | NULL    |       |
+| bloodGroup  | varchar(3)  | YES  |     | NULL    |       |
+| PHONENUMBER | bigint(11)  | YES  |     | NULL    |       |
+| hieght      | int(11)     | YES  |     | NULL    |       |
+| weight      | int(11)     | YES  |     | NULL    |       |
+| gender      | varchar(24) | YES  |     | NULL    |       |
+| age         | int(11)     | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+
+Table - ISSUE_DETAILS
+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| PNAME    | varchar(30) | YES  |     | NULL    |       |
+| BGROUP   | varchar(30) | YES  |     | NULL    |       |
+| QUANTITY | int(11)     | YES  |     | NULL    |       |
+| ISSUED   | int(11)     | YES  |     | NULL    |       |
+
+Table - PATIENT_DETAILS
++----------+-------------+------+-----+---------+-------++----
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| PatientID   | varchar(10) | NO   | PRI | NULL    |       |
+| PatientName | varchar(20) | YES  |     | NULL    |       |
+| Bloodgroup  | varchar(9)  | YES  |     | NULL    |       |
+| PhoneNo     | int(11)     | YES  |     | NULL    |       |
+| hieght      | int(11)     | YES  |     | NULL    |       |
+| weight      | varchar(9)  | YES  |     | NULL    |       |
+| Gender      | varchar(9)  | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+
+
+ Table - STOCK_DETAILS
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| BloodGroup   | varchar(20) | YES  |     | NULL    |       |
+| Currentstock | int(11)     | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+
+
+Table - TEST_DETAILS
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| Donor_ID    | varchar(6)  | YES  |     | NULL    |       |
+| bgroup      | varchar(30) | YES  |     | NULL    |       |
+| gender      | varchar(30) | YES  |     | NULL    |       |
+| hemoglobin  | int(11)     | YES  |     | NULL    |       |
+| alcoholic   | varchar(34) | YES  |     | NULL    |       |
+| Disease     | varchar(30) | YES  |     | NULL    |       |
+| Observation | varchar(30) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
